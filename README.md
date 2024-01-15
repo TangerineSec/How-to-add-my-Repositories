@@ -32,7 +32,9 @@ git push origin main
 
 ![image-20240116033608392](https://githubwiki.oss-cn-shanghai.aliyuncs.com/img/typroa/image-20240116033608392.png)
 
+打开网页链接：https://github.com/TangerineSec/How-to-add-my-Repositories，可以看到当前提交的内容与网页内容已经成功同步。
 
+![image-20240116033814124](https://githubwiki.oss-cn-shanghai.aliyuncs.com/img/typroa/image-20240116033814124.png)
 
 
 
