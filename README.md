@@ -25,10 +25,12 @@ git 其实是一个本地仓库，可以通过 `push` 指令把数据同步到 G
 cd username.github.io
 git add .
 git commit -a -m "msg"
-git push origin master
+git push origin main
 ```
 
-注意第3行命令-m代表要添加的本次提交代码注释信息，如果不加上双引号内容，会自动进入一个文件，手动填写很麻烦，要避免。如下信息表示提交成功。
+注意第3行命令-m代表要添加的本次提交代码注释信息，如果不加上双引号内容，会自动进入一个文件，手动填写很麻烦，要避免。如下信息表示提交成功到main分支。
+
+![image-20240116033608392](https://githubwiki.oss-cn-shanghai.aliyuncs.com/img/typroa/image-20240116033608392.png)
 
 
 
