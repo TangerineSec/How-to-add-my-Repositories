@@ -21,7 +21,7 @@ git 其实是一个本地仓库，可以通过 `push` 指令把数据同步到 G
 
 使用下面的命令，进入本地存储库，然后提交所有的文件到暂存区域，暂存之后就可以提交更改了。
 
-```
+```shell
 cd username.github.io
 git add .
 git commit -a -m "msg"
@@ -36,5 +36,41 @@ git push origin main
 
 ![image-20240116033814124](https://githubwiki.oss-cn-shanghai.aliyuncs.com/img/typroa/image-20240116033814124.png)
 
+## 如何在父目录下连续执行这几条重复命令并且执行呢？
 
+首先使用cd命令进入上一级目录，将这个文本文件存储在目录下：
+
+```shell
+#!/bin/sh
+echo "what is your name?"
+read name
+echo "How do you do, $name?"
+read remark
+echo "I am $remark too!"
+```
+
+使用./gitpush，执行这个文本文件，第一行脚本会切换到sh命令，使得下面的命令可以执行。执行结果如下：
+
+![image-20240116035043087](https://githubwiki.oss-cn-shanghai.aliyuncs.com/img/typroa/image-20240116035043087.png)
+
+所以，类似的，可以前面的3个提交命令组合，加上一个进入目录的命令，执行如下命令：
+
+```shell
+#!/bin/sh
+cd /w/GitStore
+git add .
+git commit -a -m "commit message"
+git push origin main
+```
+
+添加echo命令，输出更加人性化一点。我写入如下文本内容，可以一键执行，得到的结果如下。
+
+```
+#!/bin/sh
+cd /w/GitStore
+git add .
+git commit -a -m "commit message"
+git push origin main
+echo "提交完毕，开始推送，马上完成。"
+```
 
