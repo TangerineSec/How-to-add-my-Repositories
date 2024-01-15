@@ -71,7 +71,5 @@ cd /w/GitStore
 git add .
 git commit -a -m "commit message"
 git push origin main
-echo "提交完毕，开始推送，马上完成。"
+echo "提交完毕，开始推送，已经完成。"
 ```
-
-![image-20240116035615688](https://githubwiki.oss-cn-shanghai.aliyuncs.com/img/typroa/image-20240116035615688.png)
