@@ -74,6 +74,6 @@ git push origin main
 echo "提交完毕，开始推送，已经完成。"
 ```
 
-![image-20240116035755147](https://githubwiki.oss-cn-shanghai.aliyuncs.com/img/typroa/image-20240116035755147.png)
+![image-20240116040009642](https://githubwiki.oss-cn-shanghai.aliyuncs.com/img/typroa/image-20240116040009642.png)
 
 这样，下次再更改本地文件夹的内容时，就可以很快速流畅地进行提交所有内容了。
